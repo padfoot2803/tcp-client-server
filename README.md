@@ -31,6 +31,7 @@ The test file should contain 7 lines of operations in the following format: OC n
 
 Eg:
 
+```
 + 2 10
 - 100 20
 * 25 -3
@@ -38,3 +39,4 @@ Eg:
 - 2.5 15
 / 65 4
 + 0 12
+```
