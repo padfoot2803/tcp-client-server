@@ -1,5 +1,5 @@
 # tcp-client-server
-A simple TCP client-server system that utilizes the Python socket library in which the server acts as a (simple) calculator to act on two numbers sent to it by the client.
+Simple TCP client-server system that utilizes the Python socket library in which the server acts as a (simple) calculator to act on two numbers sent to it by the client.
 
 The server performs the Operation Code (OC) requested on the two integer numbers it receives from the sender and returns the result. The format of the returned result is “status-code numeric-result”. 
 
@@ -39,4 +39,35 @@ Eg:
 - 2.5 15
 / 65 4
 + 0 12
+```
+3. Output:
+
+```
+Input request: + 2 10
+The result is: 12
+
+
+Input request: - 100 20
+The result is: 80
+
+
+Input request: * 25 -3
+The result is: -75
+
+
+Input request: % 200 3
+Error 620: Invalid OC
+
+
+Input request: - 2.5 15
+Error 630: Invalid Operands
+
+
+Input request: / 65 4
+The result is: 16.25
+
+
+Input request: + 0 12
+The result is: 12
+
 ```
